@@ -19,13 +19,13 @@
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'md.nazmussaif50@gmail.com';
-            $mail->Password   = 'apxa mbby zsai idpq';
+            $mail->Username   = 'your email';
+            $mail->Password   = 'app password';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
 
-            $mail->setFrom('md.nazmussaif50@gmail.com', 'Your Name');
-            $mail->addAddress('md.nazmussaif50@gmail.com', 'Recipient Name');
+            $mail->setFrom('email', 'Your Name');
+            $mail->addAddress('email', 'Recipient Name');
 
             $mail->isHTML(true);
             $mail->Subject = $subject;
